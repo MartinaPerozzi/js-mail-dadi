@@ -24,9 +24,8 @@ buttonSubmit.addEventListener(
 
             if (userEmail == currentEmail) {
                 document.querySelector(".message").innerHTML = "Benvenuto!";
-            } else if (userEmail != currentEmail) {
-                document.querySelector(".message").innerHTML = "Accesso negato";
-
+            } else if (userEmail !== currentEmail) {
+                document.querySelector(".message").innerHTML = "Accesso negato!";
             }
 
         }
