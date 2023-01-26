@@ -1,0 +1,21 @@
+.player {
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+.one {
+    background-color: rgb(59, 156, 62);
+}
+
+.two {
+    background-color: rgb(48, 91, 185);
+}
+
+.container-players {
+    gap: 3rem;
+    justify-content: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
