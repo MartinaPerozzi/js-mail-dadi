@@ -14,29 +14,27 @@ buttonSubmit.addEventListener(
         const userEmail = document.querySelector("input").value;
         console.log(userEmail);
 
+        // scorro le email per verificarle
 
+        for (let i = 0; i < checkedEmails.length; i++) {
+            const currentEmail = checkedEmails[i];
+            console.log(currentEmail);
 
-        // for (let i = 0; i < checkedEmails.lenght; i++) {
-        //     const currentEmail = checkedEmails[i];
-        //     console.log(currentEmail);
+            // condizione 1
 
+            if (userEmail == currentEmail) {
+                document.querySelector(".message").innerHTML = "Benvenuto!";
+            } else if (userEmail != currentEmail) {
+                document.querySelector(".message").innerHTML = "Accesso negato";
 
-        // }
-        if (userEmail == checkedEmails) {
-            document.querySelector(".message").innerHTML = "Benvenuto ";
+            }
+
         }
 
     }
 
 )
-    // Se l'email corrisponde a uno dei valori delle checkedEmails
-    // const theCheck = (userEmail == checkedEmails);
-    // console.log(theCheck);
 
-
-        // if (userEmail == checkedEmails) {
-        //     document.querySelector(".message").innerHTML = "Benvenuto ";
-        // }
 
 
 
