@@ -28,6 +28,7 @@ if (randomNumberMy > randomNumberUser) {
     containerPlayerOne.innerHTML += "Game Over";
 }
 
+// Prova bottone
 playButton.addEventListener(
     "click",
     function () {
