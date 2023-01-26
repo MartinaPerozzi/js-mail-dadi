@@ -14,7 +14,7 @@ buttonSubmit.addEventListener(
         const userEmail = document.querySelector("input").value;
         console.log(userEmail);
 
-        // scorro le email per verificarle
+        // Scorro le email per verificarle
 
         for (let i = 0; i < checkedEmails.length; i++) {
             const currentEmail = checkedEmails[i];
@@ -24,12 +24,11 @@ buttonSubmit.addEventListener(
 
             if (userEmail == currentEmail) {
                 document.querySelector(".message").innerHTML = "Benvenuto!";
+                // condizione 2 
             } else if (userEmail !== currentEmail) {
                 document.querySelector(".message").innerHTML = "Accesso negato!";
             }
-
         }
-
     }
 
 )
