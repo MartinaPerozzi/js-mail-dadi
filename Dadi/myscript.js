@@ -5,6 +5,8 @@ const containerPlayerOne = document.querySelector(".container-players>div");
 
 const containerPlayerTwo = document.querySelector(".container-players>div:last-child");
 
+// Creo il bottone per giocare
+const playButton = document.querySelector("button-play>input");
 // Numero random per pc
 const randomNumberMy = Math.floor(Math.random() * 6);
 console.log(randomNumberMy);
@@ -15,10 +17,7 @@ const randomNumberUser = Math.floor(Math.random() * 6);
 console.log(randomNumberUser);
 containerPlayerTwo.querySelector(".winner-or").innerHTML += randomNumberUser;
 
-
 // Partita
-
-
 if (randomNumberMy > randomNumberUser) {
 
     containerPlayerTwo.innerHTML += "Game Over";
@@ -27,6 +26,7 @@ if (randomNumberMy > randomNumberUser) {
 
     containerPlayerOne.innerHTML += "Game Over";
 }
+
 
 
 
