@@ -16,17 +16,17 @@ buttonSubmit.addEventListener(
 
 
 
-        for (let i = 0; i < checkedEmails.lenght; i++) {
-            const currentEmail = checkedEmails[i];
-            console.log(currentEmail);
+        // for (let i = 0; i < checkedEmails.lenght; i++) {
+        //     const currentEmail = checkedEmails[i];
+        //     console.log(currentEmail);
 
 
+        // }
+        if (userEmail == checkedEmails) {
+            document.querySelector(".message").innerHTML = "Benvenuto ";
         }
 
     }
-
-
-
 
 )
     // Se l'email corrisponde a uno dei valori delle checkedEmails
