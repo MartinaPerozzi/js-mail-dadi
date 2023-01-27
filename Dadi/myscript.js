@@ -24,8 +24,6 @@ playButton.addEventListener(
         console.log(randomNumberUser);
 
 
-
-
         // containerPlayerTwo.querySelector(".winner-or").innerHTML = randomNumberUser;
         // containerPlayerOne.querySelector(".winner-or").innerHTML = randomNumberMy;
 
