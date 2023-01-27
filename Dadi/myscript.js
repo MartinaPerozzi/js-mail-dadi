@@ -30,11 +30,18 @@ playButton.addEventListener(
         // Partita
         if (randomNumberMy > randomNumberUser) {
 
-            containerPlayerTwo.innerHTML = randomNumberUser + "Game Over";
+            containerPlayerTwo.innerHTML = randomNumberUser + " Game Over";
+            containerPlayerOne.innerHTML = randomNumberMy + " Winner";
 
-        } else if (randomNumberMy < randomNumberUser) {
+        } if (randomNumberMy < randomNumberUser) {
 
-            containerPlayerOne.innerHTML = randomNumberMy + "Game Over";
+            containerPlayerOne.innerHTML = randomNumberMy + " Game Over";
+            containerPlayerTwo.innerHTML = randomNumberUser + " Winner";
+
+        } else if (randomNumberMy == randomNumberUser) {
+            containerPlayerOne.innerHTML = randomNumberMy + " Pareggio!";
+            containerPlayerTwo.innerHTML = randomNumberMy + " Pareggio!";
+
         }
 
     }
