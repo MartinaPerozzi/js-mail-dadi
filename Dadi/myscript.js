@@ -8,42 +8,35 @@ const containerPlayerTwo = document.querySelector(".container-players>div:last-c
 // Creo il bottone per giocare
 const playButton = document.querySelector(".button-play>input");
 
-// Numero random per pc
-const randomNumberMy = Math.floor(Math.random() * 6);
-console.log(randomNumberMy);
-containerPlayerOne.querySelector(".winner-or").innerHTML += randomNumberMy;
-
-// Numero random per user
-const randomNumberUser = Math.floor(Math.random() * 6);
-console.log(randomNumberUser);
-containerPlayerTwo.querySelector(".winner-or").innerHTML += randomNumberUser;
-
-// Partita
-if (randomNumberMy > randomNumberUser) {
-
-    containerPlayerTwo.innerHTML += "Game Over";
-
-} else if (randomNumberMy < randomNumberUser) {
-
-    containerPlayerOne.innerHTML += "Game Over";
-}
-
 // Prova bottone
 playButton.addEventListener(
     "click",
     function () {
+        // Numero random per pc
+        const randomNumberMy = Math.floor(Math.random() * 6 + 1);
+        console.log(randomNumberMy);
+        containerPlayerTwo.innerHTML = randomNumberMy;
 
-        const randomNumberMy = Math.floor(Math.random() * 6);
-        const randomNumberUser = Math.floor(Math.random() * 6);
+        // Numero random per user
+        const randomNumberUser = Math.floor(Math.random() * 6 + 1);
+        console.log(randomNumberUser);
 
+        containerPlayerTwo.innerHTML = randomNumberUser;
+
+
+        // containerPlayerTwo.querySelector(".winner-or").innerHTML = randomNumberUser;
+        // containerPlayerOne.querySelector(".winner-or").innerHTML = randomNumberMy;
+
+        // Partita
         if (randomNumberMy > randomNumberUser) {
 
-            containerPlayerTwo.innerHTML = "Game Over";
+            containerPlayerTwo.innerHTML = randomNumberUser + "Game Over";
 
         } else if (randomNumberMy < randomNumberUser) {
 
-            containerPlayerOne.innerHTML = "Game Over";
+            containerPlayerOne.innerHTML = randomNumberMy + "Game Over";
         }
+
     }
 )
 
