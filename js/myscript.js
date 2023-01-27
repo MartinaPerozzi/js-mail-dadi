@@ -7,6 +7,9 @@ console.log(checkedEmails);
 const buttonSubmit = document.querySelector(".button-proceed");
 console.log(buttonSubmit);
 
+// Creo variabile Switch
+let loginAllowed = false;
+
 buttonSubmit.addEventListener(
     "click",
     function () {
@@ -18,14 +21,14 @@ buttonSubmit.addEventListener(
 
         for (let i = 0; i < checkedEmails.length; i++) {
             const currentEmail = checkedEmails[i];
-            console.log(currentEmail);
 
             // condizione 1
 
             if (userEmail == currentEmail) {
+                loginAllowed = true;
                 document.querySelector(".message").innerHTML = "Benvenuto!";
                 // condizione 2 
-            } else if (userEmail !== currentEmail) {
+            } if (!loginAllowed) {
                 document.querySelector(".message").innerHTML = "Accesso negato!";
             }
         }
