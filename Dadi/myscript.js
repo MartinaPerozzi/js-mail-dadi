@@ -5,6 +5,8 @@ const containerPlayerOne = document.querySelector(".container-players>div");
 
 const containerPlayerTwo = document.querySelector(".container-players>div:last-child");
 
+const result = document.querySelector(".winner-or");
+
 // Creo il bottone per giocare
 const playButton = document.querySelector(".button-play>input");
 
@@ -15,13 +17,13 @@ playButton.addEventListener(
         // Numero random per pc
         const randomNumberMy = Math.floor(Math.random() * 6 + 1);
         console.log(randomNumberMy);
-        containerPlayerTwo.innerHTML = randomNumberMy;
+
 
         // Numero random per user
         const randomNumberUser = Math.floor(Math.random() * 6 + 1);
         console.log(randomNumberUser);
 
-        containerPlayerTwo.innerHTML = randomNumberUser;
+
 
 
         // containerPlayerTwo.querySelector(".winner-or").innerHTML = randomNumberUser;
